@@ -10,7 +10,7 @@ public class SQL {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/pokedata", "root", "park2588");
+                    "jdbc:mysql://localhost:3306/pokedata", "root", "password");
 
 
         } catch (Exception e) {
@@ -20,9 +20,9 @@ public class SQL {
 
     public String executeQuery(String query) {
         Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery();
-        while (rs.next())
-            System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + rs.getString(4));
+        ResultSet rs = stmt.executeQuery(query);
+        //while (rs.next())
+            //System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + rs.getString(4));
 
         return rs.getInt(1);
 
