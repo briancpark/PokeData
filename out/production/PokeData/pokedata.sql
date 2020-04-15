@@ -1,3 +1,8 @@
+DROP TABLE pokedex_kanto;
+DROP TABLE movedex_gen3;
+DROP TABLE squirtle_moves;
+DROP TABLE charmander_moves;
+
 CREATE TABLE pokedex_kanto(
     NO INT,
     pokemon VARCHAR(10),
@@ -166,7 +171,7 @@ INSERT INTO pokedex_kanto(NO, pokemon, type1, type2, classification, category, a
 CREATE TABLE movedex_gen3(
     name VARCHAR(14),
     type VARCHAR(8),
-    category  VARCHAR(8),
+    category VARCHAR(8),
     power INT,
     accuracy INT,
     PP INT,
@@ -200,13 +205,14 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Extrasensory'  , 'Psychic' , 'Special' , 80  , 100 , 20, 'May cause flinching.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Facade'        , 'Normal'  , 'Physical', 70  , 100 , 20, 'Power doubles if user is burned, poisoned, or paralyzed.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Fake Out'      , 'Normal'  , 'Physical', 40  , 100 , 10, 'User attacks first, foe flinches. Only usable on first turn.');
-INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Fake Tears'    , 'Dark'    , 'Status'  , NULL, 100 , 20, 'Sharply lowers opponent''s Special  Defense.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Fake Tears'    , 'Dark'    , 'Status'  , NULL, 100 , 20, 'Sharply lowers opponent''s Special Defense.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Feather Dance' , 'Flying'  , 'Status'  , NULL, 100 , 15, 'Sharply lowers opponent''s Attack.');
-INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Flatter'       , 'Dark'    , 'Status'  , NULL, 100 , 15, 'Confuses opponent, but raises its Special  Attack by two stages.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Flatter'       , 'Dark'    , 'Status'  , NULL, 100 , 15, 'Confuses opponent, but raises its Special Attack by two stages.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Focus Punch'   , 'Fighting', 'Physical', 150 , 100 , 20, 'If the user is hit before attacking, it flinches instead.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Follow Me'     , 'Normal'  , 'Status'  , NULL, NULL, 20, 'In Double Battle, the user takes all the attacks.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Frenzy Plant'  , 'Grass'   , 'Special' , 150 , 90  , 5 , 'User must recharge next turn.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Grass Whistle' , 'Grass'   , 'Status'  , NULL, 55  , 15, 'Puts opponent to sleep.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Growl'         , 'Normal'  , 'Status'  , NULL, 100 , 40, 'The user growls in a cute way, making the foe lower its Attacl stat.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Grudge'        , 'Ghost'   , 'Status'  , NULL, NULL, 5 , 'If the users faints after using this move, the PP for the opponent''s last move is depleted.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Hail'          , 'Ice'     , 'Status'  , NULL, NULL, 10, 'Non-Ice types are damaged for 5 turns.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Heat Wave'     , 'Fire'    , 'Special' , 95  , 90  , 10, 'May burn opponent.');
@@ -225,9 +231,9 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Magic Coat'    , 'Psychic' , 'Status'  , NULL, NULL, 15, 'Reflects moves that cause status   conditions back to the attacker.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Magical Leaf'  , 'Grass'   , 'Special' , 60  , -1  , 20, 'Ignores Accuracy and Evasiveness.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Memento'       , 'Dark'    , 'Status'  , NULL, 100 , 10, 'User faints, sharply lowers opponent''s Attack and Special  Attack.');
-INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Metal Sound'   , 'Steel'   , 'Status'  , NULL, 85  , 40, 'Sharply lowers opponent''s Special  Defense.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Metal Sound'   , 'Steel'   , 'Status'  , NULL, 85  , 40, 'Sharply lowers opponent''s Special Defense.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Meteor Mash'   , 'Steel'   , 'Physical', 90  , 90  , 10, 'May raise user''s Attack.');
-INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Mist Ball'     , 'Psychic' , 'Special' , 70  , 100 , 5 , 'May lower opponent''s Special  Attack.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Mist Ball'     , 'Psychic' , 'Special' , 70  , 100 , 5 , 'May lower opponent''s Special Attack.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Mud Shot'      , 'Ground'  , 'Special' , 55  , 95  , 15, 'Lowers opponent''s Speed.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Mud Sport'     , 'Ground'  , 'Status'  , NULL, NULL, 15, 'Weakens the power of Electric-type moves.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Muddy Water'   , 'Water'   , 'Special' , 90  , 85  , 10, 'May lower opponent''s Accuracy.');
@@ -245,6 +251,7 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Rock Tomb'     , 'Rock'    , 'Physical', 60  , 95  , 15, 'Lowers opponent''s Speed.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Role Play'     , 'Psychic' , 'Status'  , NULL, NULL, 15, 'User copies the opponent''s Ability.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Sand Tomb'     , 'Ground'  , 'Physical', 35  , 85  , 15, 'Traps opponent, damaging them for 4-5 turns.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Scratch'       , 'Normal'  , 'Physical', 40  , 100 , 20, 'Hard, pointed, and sharp claws rake the foe.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Secret Power'  , 'Normal'  , 'Physical', 70  , 100 , 20, 'Effects of the attack vary with the location.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Shadow Punch'  , 'Ghost'   , 'Physical', 60  , -1  , 20, 'Ignores Accuracy and Evasiveness.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Sheer Cold'    , 'Ice'     , 'Special' , NULL, NULL, 5 , 'One-Hit-KO, if it hits.');
@@ -260,7 +267,9 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Stockpile'     , 'Normal'  , 'Status'  , NULL, NULL, 20, 'Stores energy for use with Spit Up and Swallow.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Superpower'    , 'Fighting', 'Physical', 120 , 100 , 5 , 'Lowers user''s Attack and Defense.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Swallow'       , 'Normal'  , 'Status'  , NULL, NULL, 10, 'The more times the user has performed Stockpile, the more HP is recovered.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Tackle'        , 'Normal'  , 'Physical', 40  , 100 , 35, 'A physical attack in which the user charges, full body, into the foe.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Tail Glow'     , 'Bug'     , 'Status'  , NULL, NULL, 20, 'Drastically raises user''s Special  Attack.');
+INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Tail Whip'     , 'Normal'  , 'Status'  , NULL, 100 , 30, 'The user wags its tail cutely, making the foe lower its Defense stat.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Taunt'         , 'Dark'    , 'Status'  , NULL, 100 , 20, 'Opponent can only use moves that attack.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Teeter Dance'  , 'Normal'  , 'Status'  , NULL, 100 , 20, 'Confuses all PoNULL on.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Tickle'        , 'Normal'  , 'Status'  , NULL, 100 , 20, 'Lowers opponent''s Attack and Defense.');
@@ -276,4 +285,33 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Wish'          , 'Normal'  , 'Status'  , NULL, NULL, 10, 'The user recovers HP in the following turn.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Yawn'          , 'Normal'  , 'Status'  , NULL, NULL, 10, 'Puts opponent to sleep in the next turn.');
 
+CREATE TABLE squirtle_moves (
+    move VARCHAR(14),
+    level INT
+);
+INSERT INTO squirtle_moves(move, level) VALUES('Tackle'    , 1);
+INSERT INTO squirtle_moves(move, level) VALUES('Tail Whip' , 4);
+INSERT INTO squirtle_moves(move, level) VALUES('Bubble'    , 7);
+INSERT INTO squirtle_moves(move, level) VALUES('Withdraw'  , 10);
+INSERT INTO squirtle_moves(move, level) VALUES('Water Gun' , 13);
+INSERT INTO squirtle_moves(move, level) VALUES('Bite'      , 18);
+INSERT INTO squirtle_moves(move, level) VALUES('Rapid Spin', 23);
+INSERT INTO squirtle_moves(move, level) VALUES('Protect'   , 28);
+INSERT INTO squirtle_moves(move, level) VALUES('Rain Dance', 33);
+INSERT INTO squirtle_moves(move, level) VALUES('Skull Bash', 40);
+INSERT INTO squirtle_moves(move, level) VALUES('Hydro Pump', 47);
 
+CREATE TABLE charmander_moves (
+    move VARCHAR(14),
+    level INT
+);
+INSERT INTO charmander_moves(move, level) VALUES('Growl'        , 1);
+INSERT INTO charmander_moves(move, level) VALUES('Scratch'      , 1);
+INSERT INTO charmander_moves(move, level) VALUES('Ember'        , 7);
+INSERT INTO charmander_moves(move, level) VALUES('Metal Claw'   , 13);
+INSERT INTO charmander_moves(move, level) VALUES('Smokescreen'  , 19);
+INSERT INTO charmander_moves(move, level) VALUES('Scary Face'   , 25);
+INSERT INTO charmander_moves(move, level) VALUES('Flamethrower' , 31);
+INSERT INTO charmander_moves(move, level) VALUES('Slash'        , 37);
+INSERT INTO charmander_moves(move, level) VALUES('Dragon Rage'  , 43);
+INSERT INTO charmander_moves(move, level) VALUES('Fire Spin'    , 49);

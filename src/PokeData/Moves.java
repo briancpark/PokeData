@@ -3,31 +3,20 @@ package PokeData;
 import java.sql.*;
 import java.util.*;
 
+
+//https://bulbapedia.bulbagarden.net/wiki/Damage#Damage_calculation
 public class Moves {
-    String move1;
-    String move2;
-    String move3;
-    String move4;
+
+    String move;
+    String type;
+    String category;
+    int power;
+    int accuracy;
+    int PP;
+    String effect;
 
     public Moves() {
         String query = "SELECT * FROM movedex_gen3;";
-
-        SQL session = new SQL();
-
-        String x = session.executeQuery(query);
-
-        session.close();
-    }
-
-
-    //Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
-    public double damage(int level, int attackStat, int AttackPower, int opponentDefenseStat, double STAB, int weakness, int resistance) {
-        int damage = (2 * level / 5 + 2);
-        return damage;
-    }
-
-    public double damage(int level) {
-        int damage = (2 * level / 5 + 2);
-        return damage;
+        SQL move = new SQL();
     }
 }
