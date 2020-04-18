@@ -9,7 +9,7 @@ public class TestConnection {
             //Class.forName("com.mysql.jdbc.Driver");
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/pokedata", "root", "park2588");
+                    "jdbc:mysql://localhost:3306/pokedata", "root", "pass");
 
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM movedex_gen3");

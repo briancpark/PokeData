@@ -16,7 +16,7 @@ public class SQL {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/pokedata", "root", "");
+                    "jdbc:mysql://localhost/pokedata?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "pass");
 
             Statement stmt = con.createStatement();
         } catch (Exception e) {
@@ -46,6 +46,10 @@ public class SQL {
         return num;
     }
 
+    /*
+    Find a way to make the getData() generalized and modular later
+     */
+
     public ArrayList<String> getPokemonData(String query) {
         ArrayList<String> pokedata = new ArrayList<>();
 
@@ -70,6 +74,47 @@ public class SQL {
         }
         return pokedata;
     }
+
+    public ArrayList<String> getMoveData(String query) {
+        ArrayList<String> movedata = new ArrayList<>();
+
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                movedata.add(rs.getString("name"));
+                movedata.add(rs.getString("type"));
+                movedata.add(rs.getString("category"));
+                movedata.add(Integer.toString(rs.getInt("power")));
+                movedata.add(Integer.toString(rs.getInt("accuracy")));
+                movedata.add(Integer.toString(rs.getInt("PP")));
+                movedata.add(rs.getString("effect"));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return movedata;
+    }
+
+    public ArrayList<Integer> getBaseStatsData(String query) {
+        ArrayList<Integer> baseStats = new ArrayList<>();
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                baseStats.add(rs.getInt("HP"));
+                baseStats.add(rs.getInt("attack"));
+                baseStats.add(rs.getInt("defense"));
+                baseStats.add(rs.getInt("sp_attack"));
+                baseStats.add(rs.getInt("sp_defense"));
+                baseStats.add(rs.getInt("speed"));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return baseStats;
+    }
+
 
 }
 
