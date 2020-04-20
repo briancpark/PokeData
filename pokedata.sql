@@ -447,6 +447,39 @@ INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALU
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Wish'          , 'Normal'  , 'Status'  , NULL, NULL, 10, 'The user recovers HP in the following turn.');
 INSERT INTO movedex_gen3(name, type, category, power, accuracy, PP, effect) VALUES('Yawn'          , 'Normal'  , 'Status'  , NULL, NULL, 10, 'Puts opponent to sleep in the next turn.');
 
+CREATE TABLE natures(
+    nature VARCHAR(7),
+    increased_stat VARCHAR(11),
+    decreased_stat VARCHAR(11),
+    favorite_flavor VARCHAR(6),
+    disliked_flavor VARCHAR(6)
+);
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Hardy'  , NULL         , NULL         , NULL    ,NULL);
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Lonely' , 'Attack'     , 'Defense'    , 'Spicy' ,'Sour');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Brave'  , 'Attack'     , 'Speed'      , 'Spicy' ,'Sweet');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Adamant', 'Attack'     , 'Sp. Attack' , 'Spicy' ,'Dry');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Naughty', 'Attack'     , 'Sp. Defense', 'Spicy' ,'Bitter');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Bold'   , 'Defense'    , 'Attack'     , 'Sour'  ,'Spicy');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Docile' , NULL         , NULL         , NULL    ,NULL);
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Relaxed', 'Defense'    , 'Speed'      , 'Sour'  ,'Sweet');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Impish' , 'Defense'    , 'Sp. Attack' , 'Sour'  ,'Dry');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Lax'    , 'Defense'    , 'Sp. Defense', 'Sour'  ,'Bitter');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Timid'  , 'Speed'      , 'Attack'     , 'Sweet' ,'Spicy');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Hasty'  , 'Speed'      , 'Defense'    , 'Sweet' ,'Sour');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Serious', NULL         , NULL         , NULL    ,NULL);
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Jolly'  , 'Speed'      , 'Sp. Attack' , 'Sweet' ,'Dry');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Naive'  , 'Speed'      , 'Sp. Defense', 'Sweet' ,'Bitter');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Modest' , 'Sp. Attack' , 'Attack'     , 'Dry'   ,'Spicy');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Mild'   , 'Sp. Attack' , 'Defense'    , 'Dry'   ,'Sour');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Quiet'  , 'Sp. Attack' , 'Speed'      , 'Dry'   ,'Sweet');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Bashful', NULL         , NULL         , NULL    ,NULL);
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Rash'   , 'Sp. Attack' , 'Sp. Defense', 'Dry'   ,'Bitter');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Calm'   , 'Sp. Defense', 'Attack'     , 'Bitter','Spicy');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Gentle' , 'Sp. Defense', 'Defense'    , 'Bitter','Sour');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Sassy'  , 'Sp. Defense', 'Speed'      , 'Bitter','Sweet');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Careful', 'Sp. Defense', 'Sp. Attack' , 'Bitter','Dry');
+INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Quirky' , NULL         , NULL         , NULL    ,NULL);
+
 CREATE TABLE squirtle_moves (
     move VARCHAR(14),
     level INT

@@ -2,16 +2,11 @@ package PokeData;
 
 import java.util.*;
 
-public class Moves {
-    String move;
-    String type;
-    String category;
-    int power;
-    int accuracy;
-    int PP;
-    String effect;
+public class Move {
+    String move, type, category, effect;
+    int power, accuracy, PP;
 
-    public Moves(String move) {
+    public Move(String move) {
         SQL pokeSQL = new SQL();
 
         pokeSQL.open();
