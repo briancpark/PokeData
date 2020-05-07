@@ -7,8 +7,8 @@ public class Main {
         ArrayList<String> squirtleMoves = new ArrayList<String>(Arrays.asList("Tackle", "Tail Whip"));
         ArrayList<String> charmanderMoves = new ArrayList<String>(Arrays.asList("Scratch", "Growl"));
 
-        Pokemon squirtle = new Pokemon("Squirtle", squirtleMoves);
-        Pokemon charmander = new Pokemon("Charmander", charmanderMoves);
+        Pokemon squirtle = new Pokemon("Squirtle", squirtleMoves, 5, "Lax");
+        Pokemon charmander = new Pokemon("Charmander", charmanderMoves, 5, "Lax");
 
         Battle test = new Battle(squirtle, charmander);
 

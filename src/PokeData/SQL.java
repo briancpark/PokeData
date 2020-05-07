@@ -115,6 +115,21 @@ public class SQL {
         return baseStats;
     }
 
+    public ArrayList<String> getNature(String query) {
+        ArrayList<String> natureData = new ArrayList<>();
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                natureData.add(rs.getString("increased_stat"));
+                natureData.add(rs.getString("decreased_stat"));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return natureData;
+    }
+
 
 }
 

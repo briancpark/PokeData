@@ -7,8 +7,6 @@ import java.util.*;
  * Source: https://bulbapedia.bulbagarden.net/wiki/Damage#Damage_calculation
  *
  * This class sets the battle scenes and is responsible for calculating the data
- *
- *
  */
 
 public class Battle {
@@ -23,7 +21,7 @@ public class Battle {
     }
 
     //Implement more cases later
-    public int damage(Moves move, Pokemon attacker, Pokemon target) {
+    public int damage(Move move, Pokemon attacker, Pokemon target) {
         Type type = new Type();
         double critical = critical(this.stage);
 
@@ -35,7 +33,7 @@ public class Battle {
         return (int) damage;
     }
 
-    public List<Integer> damageRange(Moves move, Pokemon attacker, Pokemon target) {
+    public List<Integer> damageRange(Move move, Pokemon attacker, Pokemon target) {
         List<Integer> range = new ArrayList();
         Type type = new Type();
 
@@ -57,12 +55,12 @@ public class Battle {
     }
 
     //Calculates the base damage without modifier
-    public double damageHelper(Moves move, Pokemon attacker, Pokemon target) {
+    public double damageHelper(Move move, Pokemon attacker, Pokemon target) {
         return (((((2 * attacker.level / 5) + 2) * move.power * (attacker.attack / target.defense)) / 50) + 2);
     }
 
     //Same Type Attack Bonus
-    public double STAB(Moves move, Pokemon attacker) {
+    public double STAB(Move move, Pokemon attacker) {
         if (attacker.type1 == move.type || attacker.type2 == move.type) {
             return 1.5;
         } else {
@@ -101,5 +99,9 @@ public class Battle {
             default:
                 return 1.0 / 2;
         }
+    }
+
+    public void attack(Move move, Pokemon attacker, Pokemon target) {
+        attacker.HP = attacker.HP - damage(move, attacker, target);
     }
 }
