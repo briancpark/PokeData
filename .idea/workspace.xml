@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c066bbd5-0f2d-4d9f-b75a-4918b1e99569" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/PokeData/Battle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/PokeData/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/Moves.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/PokeData/Pokemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/SQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/PokeData/SQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/PokeData/TestConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/PokeData/TestConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeData/pokedata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeData/pokedata.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokeData/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PokeData/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokeData/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PokeData/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokeData/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PokeData/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokeData/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PokeData/SQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +115,7 @@
       <workItem from="1587252673803" duration="11383000" />
       <workItem from="1587360267038" duration="124000" />
       <workItem from="1588495054720" duration="688000" />
-      <workItem from="1588843506486" duration="319000" />
+      <workItem from="1588843506486" duration="364000" />
     </task>
     <servers />
   </component>
