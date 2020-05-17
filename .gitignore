@@ -3,3 +3,5 @@ out
 libraries
 PokeData.iml
 .DS_Store*
+src/PokeData/TestConnection.java
+src/PokeData/Credentials.java
