@@ -15,6 +15,6 @@ public class Main {
         double damageDealt = test.damage(charmander.moveSet.get(0), charmander, squirtle);
 
         List<Integer> ranger = test.damageRange(charmander.moveSet.get(0), charmander, squirtle);
-        System.out.println();
+        System.out.println("success");
     }
 }

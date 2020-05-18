@@ -13,10 +13,11 @@ public class SQL {
     }
 
     public void open() {
+        Cred auth = new Cred();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/pokedata?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "pass");
+                    "jdbc:mysql://localhost/pokedata?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", auth.user, auth.pass);
 
             Statement stmt = con.createStatement();
         } catch (Exception e) {
