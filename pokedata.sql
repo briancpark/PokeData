@@ -482,6 +482,74 @@ INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, dis
 INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Careful', 'Sp. Defense', 'Sp. Attack' , 'Bitter','Dry');
 INSERT INTO natures(nature, increased_stat, decreased_stat, favorite_flavor, disliked_flavor) VALUES('Quirky' , NULL         , NULL         , NULL    ,NULL);
 
+CREATE TABLE bulbasaur_moves (
+    move VARCHAR(14),
+    level INT
+);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Growl'        , 1);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Tackle'       , 1);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Leech Seed'   , 7);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Vine Whip'    , 10);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Poison Powder', 15);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Sleep Powder' , 15);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Razor Leaf'   , 20);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Sweet Scent'  , 25);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Growth'       , 32);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Synthesis'    , 39);
+INSERT INTO bulbasaur_moves(move, level) VALUES('Solar Beam'   , 46);
+
+CREATE TABLE ivysaur_moves (
+     move VARCHAR(14),
+     level INT
+);
+INSERT INTO ivysaur_moves(move, level) VALUES('Growl'        , 1);
+INSERT INTO ivysaur_moves(move, level) VALUES('Leech Seed'   , 1);
+INSERT INTO ivysaur_moves(move, level) VALUES('Tackle'       , 1);
+INSERT INTO ivysaur_moves(move, level) VALUES('Growl'        , 4);
+INSERT INTO ivysaur_moves(move, level) VALUES('Leech Seed'   , 7);
+INSERT INTO ivysaur_moves(move, level) VALUES('Vine Whip'    , 10);
+INSERT INTO ivysaur_moves(move, level) VALUES('Poison Powder', 15);
+INSERT INTO ivysaur_moves(move, level) VALUES('Sleep Powder' , 15);
+INSERT INTO ivysaur_moves(move, level) VALUES('Razor Leaf'   , 22);
+INSERT INTO ivysaur_moves(move, level) VALUES('Sweet Scent'  , 29);
+INSERT INTO ivysaur_moves(move, level) VALUES('Growth'       , 38);
+INSERT INTO ivysaur_moves(move, level) VALUES('Synthesis'    , 47);
+INSERT INTO ivysaur_moves(move, level) VALUES('Solar Beam'   , 56);
+
+CREATE TABLE venusaur_moves (
+    move VARCHAR(14),
+    level INT
+);
+INSERT INTO venusaur_moves(move, level) VALUES('Growl'        , 1);
+INSERT INTO venusaur_moves(move, level) VALUES('Leech Seed'   , 1);
+INSERT INTO venusaur_moves(move, level) VALUES('Tackle'       , 1);
+INSERT INTO venusaur_moves(move, level) VALUES('Vine Whip'    , 1);
+INSERT INTO venusaur_moves(move, level) VALUES('Growl'        , 4);
+INSERT INTO venusaur_moves(move, level) VALUES('Leech Seed'   , 7);
+INSERT INTO venusaur_moves(move, level) VALUES('Vine Whip'    , 10);
+INSERT INTO venusaur_moves(move, level) VALUES('Poison Powder', 15);
+INSERT INTO venusaur_moves(move, level) VALUES('Sleep Powder' , 15);
+INSERT INTO venusaur_moves(move, level) VALUES('Razor Leaf'   , 22);
+INSERT INTO venusaur_moves(move, level) VALUES('Sweet Scent'  , 29);
+INSERT INTO venusaur_moves(move, level) VALUES('Growth'       , 41);
+INSERT INTO venusaur_moves(move, level) VALUES('Synthesis'    , 53);
+INSERT INTO venusaur_moves(move, level) VALUES('Solar Beam'   , 65);
+
+CREATE TABLE charmander_moves (
+    move VARCHAR(14),
+    level INT
+);
+INSERT INTO charmander_moves(move, level) VALUES('Growl'        , 1);
+INSERT INTO charmander_moves(move, level) VALUES('Scratch'      , 1);
+INSERT INTO charmander_moves(move, level) VALUES('Ember'        , 7);
+INSERT INTO charmander_moves(move, level) VALUES('Metal Claw'   , 13);
+INSERT INTO charmander_moves(move, level) VALUES('Smokescreen'  , 19);
+INSERT INTO charmander_moves(move, level) VALUES('Scary Face'   , 25);
+INSERT INTO charmander_moves(move, level) VALUES('Flamethrower' , 31);
+INSERT INTO charmander_moves(move, level) VALUES('Slash'        , 37);
+INSERT INTO charmander_moves(move, level) VALUES('Dragon Rage'  , 43);
+INSERT INTO charmander_moves(move, level) VALUES('Fire Spin'    , 49);
+
 CREATE TABLE squirtle_moves (
     move VARCHAR(14),
     level INT
@@ -498,17 +566,5 @@ INSERT INTO squirtle_moves(move, level) VALUES('Rain Dance', 33);
 INSERT INTO squirtle_moves(move, level) VALUES('Skull Bash', 40);
 INSERT INTO squirtle_moves(move, level) VALUES('Hydro Pump', 47);
 
-CREATE TABLE charmander_moves (
-    move VARCHAR(14),
-    level INT
-);
-INSERT INTO charmander_moves(move, level) VALUES('Growl'        , 1);
-INSERT INTO charmander_moves(move, level) VALUES('Scratch'      , 1);
-INSERT INTO charmander_moves(move, level) VALUES('Ember'        , 7);
-INSERT INTO charmander_moves(move, level) VALUES('Metal Claw'   , 13);
-INSERT INTO charmander_moves(move, level) VALUES('Smokescreen'  , 19);
-INSERT INTO charmander_moves(move, level) VALUES('Scary Face'   , 25);
-INSERT INTO charmander_moves(move, level) VALUES('Flamethrower' , 31);
-INSERT INTO charmander_moves(move, level) VALUES('Slash'        , 37);
-INSERT INTO charmander_moves(move, level) VALUES('Dragon Rage'  , 43);
-INSERT INTO charmander_moves(move, level) VALUES('Fire Spin'    , 49);
+
+
