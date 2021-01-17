@@ -13,8 +13,19 @@ Games I plan to cover:
 
 I will attempt to play though some Pokemon games and create a database and optimize strategies. I hope a completed tool will be helpful for Pokemon speedrunners and enthusiasts.
 
+# Setup
+
+```
+conda create -n pokedata python=3.6
+```
+
+
 # Documentation 
-I'm fairly new to DBMS and JDBC... So this will be a bit messy for now and uncompleted. All the Java code is [here](src/PokeData) and the `.sql` file is [here](pokedata.sql).
+
+UPDATE: Changing the language to Python to make it easier to integrate libraries and AI functionality. I recently disocvered an AI package called retro from OpenAI that can control GBA roms, so the migration to Python will make this integration easier.
+
+
+I'm fairly new to DBMS and JDBC... So this will be a bit messy for now and uncompleted. All the Java code is [here](src/PokeData) and the `.sql` file is [here](db/pokedata.sql).
 
 ## Creating the DataBase with MySQL
 Database will be written in SQL (MySQL) and software will be written in Java. Java's OOP will optimize how Pokemon data is managed.

@@ -3,6 +3,7 @@ DROP TABLE movedex_gen3;
 DROP TABLE squirtle_moves;
 DROP TABLE charmander_moves;
 
+CREATE DATABASE pokedata;
 Use pokedata;
 
 CREATE TABLE pokedex_kanto(
